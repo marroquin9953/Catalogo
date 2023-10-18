@@ -20,7 +20,7 @@ Abre una terminal y navega hasta el directorio del proyecto:
 cd C:\Users\TU_USUARIO\Desktop\Catalogo
 
 Paso 2:
-Ejecuta el siguiente comando para iniciar el proyecto:
+Ejecuta el siguiente comando para iniciar el proyecto :
 
 ```bash
 npm start
