@@ -35,14 +35,8 @@ Paso 4:
 
 Si necesitas detener la ejecución de tu aplicación Node.js después de iniciarla con `npm start`, sigue estos pasos:
 
-### Método Directo:
-
-1. **En la terminal donde la aplicación está actualmente en ejecución:**
-    - La mayoría de las aplicaciones Node.js pueden detenerse presionando `Ctrl + C` en la terminal o consola activa. Esto interrumpirá el proceso actual enviando una señal SIGINT.
-
-```sh
-^C
-
+En la terminal donde la aplicación está actualmente en ejecución:**
+- La mayoría de las aplicaciones Node.js pueden detenerse presionando `Ctrl + C` en la terminal o consola activa. Esto interrumpirá el proceso actual enviando una señal SIGINT.
 
 Datos de los productos
 Los datos de los productos se pueden encontrar en el archivo lista_productos.js, el cual está ubicado en la carpeta src.
