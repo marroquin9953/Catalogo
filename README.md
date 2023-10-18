@@ -19,23 +19,23 @@ Abre una terminal y navega hasta el directorio del proyecto:
 ```bash
 cd C:\Users\TU_USUARIO\Desktop\Catalogo
 
-Paso 2:
+### Paso 2:
 Ejecuta el siguiente comando para iniciar el proyecto:
 
 ```bash
 npm start
 
-Paso 3:
+### Paso 3:
 El proyecto se iniciará y estará disponible en tu navegador web en la siguiente dirección:
 
 ```bash
 http://localhost:3000/
 
-Datos de los productos
+### Datos de los productos
 Los datos de los productos se pueden encontrar en el archivo lista_productos.js, el cual está ubicado en la carpeta src.
 
-Contacto
+### Contacto
 Si quieres contactarme, puedes alcanzarme en <alexandermarq@ieee.org.>
 
-Licencia
+### Licencia
 Este proyecto usa la siguiente licencia: Isidro Alexander Marroquin Echeverria..
