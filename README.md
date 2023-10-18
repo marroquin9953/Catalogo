@@ -1,6 +1,9 @@
 # Catalogo
 
-Prouecto impulsado por la asignatura de administración de prooyectos para la implementación de una tienda web para una entidad.
+Proyecto impulsado por la asignatura de administración de prooyectos para la implementación de una tienda web para una entidad.
+
+
+Puedes visualizar el [sitio](https://tecniservicioshdosmil.netlify.app/)
 
 ## Pre-requisitos
 
