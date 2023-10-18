@@ -38,4 +38,4 @@ Contacto
 Si quieres contactarme, puedes alcanzarme en <alexandermarq>@ieee.org.
 
 Licencia
-Este proyecto usa la siguiente licencia: Isidro Alexander Marroquin Echeverria.
+Este proyecto usa la siguiente licencia: Isidro Alexander Marroquin Echeverria..
