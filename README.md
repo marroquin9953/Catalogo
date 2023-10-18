@@ -35,7 +35,7 @@ Datos de los productos
 Los datos de los productos se pueden encontrar en el archivo lista_productos.js, el cual está ubicado en la carpeta src.
 
 Contacto
-Si quieres contactarme, puedes alcanzarme en <alexandermarq>@ieee.org.
+Si quieres contactarme, puedes alcanzarme en <alexandermarq@ieee.org.>
 
 Licencia
 Este proyecto usa la siguiente licencia: Isidro Alexander Marroquin Echeverria..
