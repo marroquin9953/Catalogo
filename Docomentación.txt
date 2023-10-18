@@ -1,0 +1,24 @@
+---> Tener instalado un editor ya sea Sublime Text o Visual Studio Code
+---> Tener Instalado Node.JS
+
+-Paso 1 para correr proyecto:
+
+---> cd C:\Users\Alexa\Desktop\Catalogo
+En mi casi Alexa es mi usuario en mi laptop, tener en cuenta.
+
+-Paso 2: 
+
+---> npm start
+
+Paso 3:
+
+A iniciar el navegador te va abrir en el puerto 
+
+---> http://localhost:3000/
+
+
+Los datos de los productos se encuentran ubicados en el archivo llamado:
+
+---> lista_productos.JS
+
+El cual se encuentra ubicado en la carpeta: ---> src
