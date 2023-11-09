@@ -1,11 +1,11 @@
 export const all_products = [
   {
-    name: "Motor Axial 120V",
-    price: "12.35",
+    name: "Mantenimiento preventivo",
+    price: "35",
     img: "img1.webp",
     category: "flores",
     color: "rosa",
-    description: "Aqui la descripción de el producto.",
+    description: "Minisplit de 12,000BTU hasta 18,000BTU.",
   },
   {
     name: "Duis commodo",
