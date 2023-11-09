@@ -1,38 +1,35 @@
 export const all_products = [
   {
-    name: "Mantenimiento preventivo",
+    name: "Minisplit de 12,000BTU hasta 18,000BTU",
     price: "35",
     img: "img1.webp",
     category: "flores",
     color: "rosa",
-    description: "Minisplit de 12,000BTU hasta 18,000BTU.",
+    description: "Mantenimiento preventivo.",
   },
   {
-    name: "Duis commodo",
-    price: "24.99",
+    name: "Eco-Enfriador Kabel",
+    price: "15",
     img: "img2.webp",
     category: "flores",
     color: "roxo",
-    description:
-      "Aqui la descripción de el producto.",
+    description: "Mantenimiento preventivo.",
   },
   {
-    name: "Neque Volutpat",
-    price: "39.99",
+    name: "Aire acondicionado tipo ventana",
+    price: "24",
     img: "img40.webp",
     category: "cactos",
     color: "verde",
-    description:
-      "Aqui la descripción de el producto.",
+    description: "Mantenimiento preventivo.",
   },
   {
-    name: "Ligula ipsum",
-    price: "22.25",
+    name: "Aire acondicionado tipo Central",
+    price: "110",
     img: "img3.webp",
     category: "flores",
     color: "amarelo",
-    description:
-      "Aqui la descripción de el producto.",
+    description: "Mantenimiento preventivo.",
   },
   {
     name: "Quisque",
