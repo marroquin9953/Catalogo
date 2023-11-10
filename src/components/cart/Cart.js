@@ -32,7 +32,7 @@ const Cart = ({ onClose, onShowFinal }) => {
     const phoneNumber = '50361985345'; // Tu número de teléfono
     const greeting = "Buen día, quiero programar el siguiente mantenimiento."; // Saludo inicial
     const message = encodeURIComponent(
-      `${greeting}\n\n*Detalles del pedido:*\n${itemsCart.items.map(item => `${item.name} - Cantidad: ${item.amount}`).join('\n')}\nSubtotal: $${subtotal.toFixed(2)}\nIVA (13%): $${iva.toFixed(2)}\nTotal: $${total.toFixed(2)}`
+      `${greeting}\n\n*Detalles del pedido:*\n${itemsCart.items.map(item => `${item.name} - Cantidad: ${item.amount}`).join('\n')}\n*Subtotal:* $${subtotal.toFixed(2)}\n*IVA (13%):* $${iva.toFixed(2)}\n*Total:* $${total.toFixed(2)}`
     );
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
     window.open(whatsappUrl, '_blank');
