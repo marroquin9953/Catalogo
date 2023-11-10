@@ -2,7 +2,7 @@ export const all_products = [
   {
     name: "Minisplit de 12,000BTU hasta 18,000BTU",
     price: "35",
-    img: "img1.webp",
+    img: "mantto1.webp",
     category: "flores",
     color: "rosa",
     description: "Mantenimiento preventivo.",
