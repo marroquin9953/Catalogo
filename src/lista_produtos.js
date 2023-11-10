@@ -10,7 +10,7 @@ export const all_products = [
   {
     name: "Eco-Enfriador Kabel",
     price: "15",
-    img: "img2.webp",
+    img: "mantto2.webp",
     category: "flores",
     color: "roxo",
     description: "Mantenimiento preventivo.",
@@ -18,7 +18,7 @@ export const all_products = [
   {
     name: "Aire acondicionado tipo ventana",
     price: "24",
-    img: "img40.webp",
+    img: "mantto3.webp",
     category: "cactos",
     color: "verde",
     description: "Mantenimiento preventivo.",
