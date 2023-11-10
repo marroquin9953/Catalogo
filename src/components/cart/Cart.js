@@ -31,31 +31,33 @@ const Cart = ({ onClose, onShowFinal }) => {
 
   const { isDarkMode } = useContext(ColorModeContext);
 
+  // Calcula el IVA y el total aquí
+  const IVA_RATE = 0.13; // Tasa de IVA del 13%
+  const subtotal = Number(itemsCart.total);
+  const iva = subtotal * IVA_RATE;
+  const total = subtotal + iva;
+
   return (
     <Modal onClose={onClose} isDarkMode={isDarkMode}>
       <div className={classes.header}>
         <p>Tu carrito</p>
-        <button onClick={removeAll}>Carro vacio</button>
+        <button onClick={removeAll}>Eliminar mi compra</button>
       </div>
       <ul className={classes.cartList}>
-        {itemsCart.items.length ? (
-          listItemsCart
-        ) : (
-          <p className={classes.noItems}>No hay artículos en su carrito de compras.</p>
-        )}
+        {itemsCart.items.length ? listItemsCart : <p className={classes.noItems}>No hay artículos en su carrito de compras.</p>}
       </ul>
       {itemsCart.items.length ? (
-        <div className={classes.total}>
-          <p>
-            Sub-Total: <span>$ {Number(itemsCart.total).toFixed(2)}</span>
-          </p>
-          <WrapperButton onClick={showFinalModalHandler}>
-            Finalizar compra
-          </WrapperButton>
-        </div>
-      ) : (
-        ""
-      )}
+  <div className={classes.totalContainer}>
+    <div className={classes.totals}>
+      <p>Sub-Total: <span>$ {subtotal.toFixed(2)}</span></p>
+      <p>IVA (13%): <span>$ {iva.toFixed(2)}</span></p>
+      <p>Total: <span>$ {total.toFixed(2)}</span></p>
+    </div>
+    <WrapperButton onClick={showFinalModalHandler}>
+      Finalizar compra
+    </WrapperButton>
+  </div>
+) : null}
       <ButtonClose onClose={onClose} />
     </Modal>
   );

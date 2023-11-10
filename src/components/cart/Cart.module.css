@@ -16,21 +16,42 @@
   font-weight: bold;
 }
 
-.total {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 2rem 1.2rem 2rem;
+/* Estilos actualizados para totalContainer */
+.totalContainer {
+  padding: 1.2rem 2rem;
   box-shadow: var(--sombra);
+  display: flex; /* Mantiene el contenedor como flex */
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
 }
 
-.total span {
+/* Estilos para los títulos de los montos y los montos */
+.totals,
+.amounts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+  gap: 0.3rem; /* Espacio entre los elementos */
+}
+
+.totals p,
+.amounts p {
+  margin: 0; /* Remueve cualquier margen por defecto */
+}
+
+.amounts span {
   font-weight: bold;
   font-size: 1.3rem;
 }
 
 .noItems {
   padding: 2rem 0 3rem 0;
+}
+
+/* Centra solo el botón de finalizar compra */
+.totalContainer button {
+  align-self: center; /* Centra solo el botón horizontalmente */
+  margin-top: 1rem; /* Ajusta según sea necesario */
 }
 
 @media all and (max-width: 470px) {
@@ -43,16 +64,20 @@
     padding: 2rem 1.2rem 0 1.2rem;
   }
 
-  .total {
+  /* Ajustes para móviles para totalContainer */
+  .totalContainer {
     padding: 1.2rem;
     flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos al inicio (izquierda) también en móviles */
   }
 
-  .total span {
+  .totals p,
+  .amounts p {
     font-size: 1.1rem;
   }
 
-  .total button {
-    margin-top: 0.6rem;
+  /* Centra solo el botón de finalizar compra también en móviles */
+  .totalContainer button {
+    align-self: center; /* Centra solo el botón horizontalmente */
   }
 }
