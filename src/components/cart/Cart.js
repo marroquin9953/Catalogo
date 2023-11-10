@@ -8,8 +8,7 @@ import ButtonClose from "../utilities/ButtonClose";
 import { ColorModeContext } from "../../context/ColorModeContext";
 
 const Cart = ({ onClose, onShowFinal }) => {
-  const { itemsCart, updateAmount, removeItem, removeAll } =
-    useContext(CartContext);
+  const { itemsCart, updateAmount, removeItem, removeAll } = useContext(CartContext);
 
   const listItemsCart = itemsCart.items.map((item) => (
     <CartItem
@@ -23,19 +22,30 @@ const Cart = ({ onClose, onShowFinal }) => {
     />
   ));
 
-  const showFinalModalHandler = () => {
-    onClose();
-    removeAll();
-    onShowFinal();
-  };
-
-  const { isDarkMode } = useContext(ColorModeContext);
-
   // Calcula el IVA y el total aquí
   const IVA_RATE = 0.13; // Tasa de IVA del 13%
   const subtotal = Number(itemsCart.total);
   const iva = subtotal * IVA_RATE;
   const total = subtotal + iva;
+
+  const sendToWhatsApp = () => {
+    const phoneNumber = '50372064733'; // Tu número de teléfono
+    const greeting = "Buen día, quiero programar el siguiente mantenimiento."; // Saludo inicial
+    const message = encodeURIComponent(
+      `${greeting}\n\n*Detalles del pedido:*\n${itemsCart.items.map(item => `${item.name} - Cantidad: ${item.amount}`).join('\n')}\nSubtotal: $${subtotal.toFixed(2)}\nIVA (13%): $${iva.toFixed(2)}\nTotal: $${total.toFixed(2)}`
+    );
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const showFinalModalHandler = () => {
+    sendToWhatsApp(); // Llama a la función para enviar los detalles a WhatsApp
+    removeAll(); // Esto eliminará todos los elementos del carrito si es parte de tu lógica
+    onClose(); // Cerrar el modal del carrito
+    onShowFinal(); // Suponiendo que esto es para mostrar algún mensaje final o confirmación
+  };
+
+  const { isDarkMode } = useContext(ColorModeContext);
 
   return (
     <Modal onClose={onClose} isDarkMode={isDarkMode}>
@@ -47,17 +57,17 @@ const Cart = ({ onClose, onShowFinal }) => {
         {itemsCart.items.length ? listItemsCart : <p className={classes.noItems}>No hay artículos en su carrito de compras.</p>}
       </ul>
       {itemsCart.items.length ? (
-  <div className={classes.totalContainer}>
-    <div className={classes.totals}>
-      <p>Sub-Total: <span>$ {subtotal.toFixed(2)}</span></p>
-      <p>IVA (13%): <span>$ {iva.toFixed(2)}</span></p>
-      <p>Total: <span>$ {total.toFixed(2)}</span></p>
-    </div>
-    <WrapperButton onClick={showFinalModalHandler}>
-      Finalizar compra
-    </WrapperButton>
-  </div>
-) : null}
+        <div className={classes.totalContainer}>
+          <div className={classes.totals}>
+            <p>Sub-Total: <span>$ {subtotal.toFixed(2)}</span></p>
+            <p>IVA (13%): <span>$ {iva.toFixed(2)}</span></p>
+            <p>Total: <span>$ {total.toFixed(2)}</span></p>
+          </div>
+          <WrapperButton onClick={showFinalModalHandler}>
+            Finalizar compra
+          </WrapperButton>
+        </div>
+      ) : null}
       <ButtonClose onClose={onClose} />
     </Modal>
   );
