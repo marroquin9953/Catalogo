@@ -1,6 +1,6 @@
 export const all_products = [
   {
-    name: "Minisplit de 12,000BTU hasta 18,000BTU",
+    name: "MiniSplit de 12,000BTU hasta 18,000BTU",
     price: "35",
     img: "mantto1.webp",
     category: "flores",
