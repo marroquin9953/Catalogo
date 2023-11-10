@@ -26,7 +26,7 @@ export const all_products = [
   {
     name: "Aire acondicionado tipo Central",
     price: "110",
-    img: "img3.webp",
+    img: "mantto4.webp",
     category: "flores",
     color: "amarelo",
     description: "Mantenimiento preventivo.",
