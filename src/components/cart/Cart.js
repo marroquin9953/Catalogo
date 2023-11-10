@@ -29,7 +29,7 @@ const Cart = ({ onClose, onShowFinal }) => {
   const total = subtotal + iva;
 
   const sendToWhatsApp = () => {
-    const phoneNumber = '50372064733'; // Tu número de teléfono
+    const phoneNumber = '50361985345'; // Tu número de teléfono
     const greeting = "Buen día, quiero programar el siguiente mantenimiento."; // Saludo inicial
     const message = encodeURIComponent(
       `${greeting}\n\n*Detalles del pedido:*\n${itemsCart.items.map(item => `${item.name} - Cantidad: ${item.amount}`).join('\n')}\nSubtotal: $${subtotal.toFixed(2)}\nIVA (13%): $${iva.toFixed(2)}\nTotal: $${total.toFixed(2)}`
