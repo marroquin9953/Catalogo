@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import WrapperFiltroSection from "../utilities/WrapperFiltroSection";
 import classes from "./FormCategory.module.css";
 
-const categories = ["flores", "Cactus", "Otros"];
+const categories = ["Minisplit", "Kabel", "Tipo Central"];
 
 const FormCategory = ({ setFilter, filterVal }) => {
   const [selectedCategories, setSelectedCategories] = useState(filterVal);
