@@ -58,7 +58,7 @@ export const all_products = [
   {
     name: "Equipo por agregar",
     price: "38.95",
-    img: "img48.webp",
+    img: "stock.webp",
     category: "flores",
     color: "amarelo",
     description: "Aqui la descripción de el producto.",
@@ -66,7 +66,7 @@ export const all_products = [
   {
     name: "Equipo por agregar",
     price: "25.99",
-    img: "img8.webp",
+    img: "stock.webp",
     category: "flores",
     description: "Aqui la descripción de el producto.",
     color: "rosa",
@@ -74,7 +74,7 @@ export const all_products = [
   {
     name: "Equipo por agregar",
     price: "42.75",
-    img: "img9.webp",
+    img: "stock.webp",
     category: "flores",
     color: "branco",
     description:
@@ -83,7 +83,7 @@ export const all_products = [
   {
     name: "Equipo por agregar",
     price: "49.99",
-    img: "img50.webp",
+    img: "stock.webp",
     category: "flores",
     color: "amarelo",
     description:
@@ -92,7 +92,7 @@ export const all_products = [
   {
     name: "Equipo por agregar",
     price: "75.10",
-    img: "img10.webp",
+    img: "stock.webp",
     category: "flores",
     color: "azul",
     description:
@@ -101,7 +101,7 @@ export const all_products = [
   {
     name: "Equipo por agregar",
     price: "17.45",
-    img: "img11.webp",
+    img: "stock.webp",
     category: "cactos",
     description: "Aqui la descripción de el producto.",
     color: "verde",
@@ -109,7 +109,7 @@ export const all_products = [
   {
     name: "Equipo por agregar",
     price: "33.59",
-    img: "img47.webp",
+    img: "stock.webp",
     category: "flores",
     color: "amarelo",
     description:
@@ -118,7 +118,7 @@ export const all_products = [
   {
     name: "Equipo por agregar",
     price: "38.25",
-    img: "img12.webp",
+    img: "stock.webp",
     category: "flores",
     description: "Aqui la descripción de el producto.",
     color: "laranja",
@@ -126,7 +126,7 @@ export const all_products = [
   {
     name: "Equipo por agregar",
     price: "48.60",
-    img: "img13.webp",
+    img: "stock.webp",
     category: "outros",
     color: "verde",
     description:
