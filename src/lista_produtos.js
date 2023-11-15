@@ -34,7 +34,7 @@ export const all_products = [
   {
     name: "MiniSplit de 18,000BTU",
     price: "35.00",
-    img: "img4.webp",
+    img: "mantto1.webp",
     category: "Minisplit",
     color: "verde",
     description: "Mantenimiento preventivo.",
@@ -42,7 +42,7 @@ export const all_products = [
   {
     name: "MiniSplit de 24,000BTU",
     price: "35.00",
-    img: "img5.webp",
+    img: "mantto1.webp",
     category: "Minisplit",
     description: "Mantenimiento preventivo.",
     color: "verde",
@@ -50,22 +50,21 @@ export const all_products = [
   {
     name: "MiniSplit de 36,000BTU",
     price: "35.00",
-    img: "img6.webp",
+    img: "mantto1.webp",
     category: "Minisplit",
     color: "roxo",
     description: "Mantenimiento preventivo.",
   },
   {
-    name: "Ultrices",
+    name: "Equipo por agregar",
     price: "38.95",
     img: "img48.webp",
     category: "flores",
     color: "amarelo",
-    description:
-      "Aqui la descripción de el producto.",
+    description: "Aqui la descripción de el producto.",
   },
   {
-    name: "Donec placerat",
+    name: "Equipo por agregar",
     price: "25.99",
     img: "img8.webp",
     category: "flores",
@@ -73,7 +72,7 @@ export const all_products = [
     color: "rosa",
   },
   {
-    name: "Orci varius",
+    name: "Equipo por agregar",
     price: "42.75",
     img: "img9.webp",
     category: "flores",
@@ -82,7 +81,7 @@ export const all_products = [
       "Aqui la descripción de el producto.",
   },
   {
-    name: "Mauris",
+    name: "Equipo por agregar",
     price: "49.99",
     img: "img50.webp",
     category: "flores",
@@ -91,7 +90,7 @@ export const all_products = [
       "Aqui la descripción de el producto.",
   },
   {
-    name: "Cras sit",
+    name: "Equipo por agregar",
     price: "75.10",
     img: "img10.webp",
     category: "flores",
@@ -100,7 +99,7 @@ export const all_products = [
       "Aqui la descripción de el producto.",
   },
   {
-    name: "Etiam",
+    name: "Equipo por agregar",
     price: "17.45",
     img: "img11.webp",
     category: "cactos",
@@ -108,7 +107,7 @@ export const all_products = [
     color: "verde",
   },
   {
-    name: "Bibendum",
+    name: "Equipo por agregar",
     price: "33.59",
     img: "img47.webp",
     category: "flores",
@@ -117,7 +116,7 @@ export const all_products = [
       "Aqui la descripción de el producto.",
   },
   {
-    name: "Ullamcolorper augue",
+    name: "Equipo por agregar",
     price: "38.25",
     img: "img12.webp",
     category: "flores",
@@ -125,7 +124,7 @@ export const all_products = [
     color: "laranja",
   },
   {
-    name: "Eget facilisis",
+    name: "Equipo por agregar",
     price: "48.60",
     img: "img13.webp",
     category: "outros",
