@@ -46,7 +46,11 @@ const FilterContextProvider = ({ children }) => {
   useEffect(() => {
     let newFilter = {};
 
-    
+    //Filtrar por color
+    newFilter = all_products.filter((prod) => {
+      if (filter.colors.length === 0) return true;
+      return filter.colors.indexOf(prod.color) >= 0;
+    });
 
     //Filtrar por categoria
     newFilter = newFilter.filter((prod) => {
